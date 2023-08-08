@@ -1,0 +1,16 @@
+import pyautogui as pa
+import time
+
+time.sleep(3)
+
+x = 50
+y = 400
+b = button="left"
+for i in range(5) :
+    pa.mouseDown(x,y,b)
+    pa.moveTo(x+200,y, 3)
+    pa.mouseUp()
+    pa.moveRel(50,0)
+    x = x + 250
+pa.moveRel(50,50)
+
